@@ -4,6 +4,8 @@ public class Application {
 	public static void main(String[] args) {
 		
 		Box firstTestObject = Box.getInstance();
+		System.out.println(firstTestObject.getValue());
+		
 		firstTestObject.setValue(500);
 		System.out.println(firstTestObject.getValue());
 				

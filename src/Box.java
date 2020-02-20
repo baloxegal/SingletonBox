@@ -4,8 +4,8 @@ public class Box {
 	
 	private Object value;
 	
-	private Box() {
-		 
+	private Box(Object value) {
+		 this.value = value;
 	}
 	public Object getValue() {
 		return value;
@@ -21,7 +21,7 @@ public class Box {
 	//Singelton
 	
 	private static class Holder{
-		private static final Box INSTANCE = new Box();
+		private static final Box INSTANCE = new Box(null);
 	}
 	public static Box getInstance() {
 		return Holder.INSTANCE;
